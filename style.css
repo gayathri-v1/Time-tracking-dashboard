@@ -1,0 +1,243 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+:root{
+    --Blue: hsl(246, 80%, 60%);
+    --Light-red-work: hsl(15, 100%, 70%);
+    --Soft-blue-play: hsl(195, 74%, 62%);
+    --Light-red-study: hsl(348, 100%, 68%);
+    --Lime-green-exercise: hsl(145, 58%, 55%);
+    --Violet-social: hsl(264, 64%, 52%);
+    --Soft-orange-self-care: hsl(43, 84%, 65%);
+
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%);
+
+    
+}
+body{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-dark-blue);
+}
+.prof-card{
+    background-color: var(--Dark-blue);
+    border-radius: 10px;
+}
+.profile{
+    height:70%;
+    width:100%;
+    background-color: var(--Blue);
+    padding:20px;
+    border-radius: 10px;
+    
+}
+.avatar img{
+    height: 70px;
+    width:70px;
+    border: 3px solid white;
+    border-radius: 50%;
+    float: block-start;
+}
+.details{
+    color: white;
+    padding:20px 0;
+}
+.details p{
+    font-size: 12px;
+    padding:30px 0;
+}
+.details h1{
+    font-weight: 400;   
+}
+
+.activity{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+.activity button{
+    color: var(--Pale-Blue);
+    text-align: left;
+    padding:10px;
+    border: none;
+    background-color: transparent;
+   
+}
+.activity button:hover{
+    color:white;
+}
+
+@media(max-width:375px){
+    .profile{
+        height:80%;
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap:10px;
+        
+    }
+    .details{
+        padding: 0;
+        align-items: center;
+        line-height: 25px;
+    }
+    .details p{
+        padding: 0;
+        margin-top: 10px;
+    }
+    .activity{
+        height:20%;
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    .activity button:hover{
+        color:white;
+    }
+    
+}
+.card1{
+    background-color: var(--Dark-blue);
+    border-radius: 10px;
+}
+.card:hover{
+    background-color: var(--Desaturated-blue);
+}
+.bg{
+    height:50px;
+    width:100%;
+    
+}
+.bg img{
+    float: inline-end;
+}
+.work{
+    background-color: var(--Light-red-work);
+    border-radius: 10px;
+}
+.play{
+    background-color: var(--Soft-blue-play);
+    border-radius: 10px;
+}
+.study{
+    background-color: var(--Light-red-study);
+    border-radius: 10px;
+}
+.exercise{
+    background-color: var(--Lime-green-exercise);
+    border-radius: 10px;}
+.social{
+    background-color: var(--Violet-social);
+    border-radius: 10px;
+}
+.self{
+    background-color: var(--Soft-orange-self-care);
+    border-radius: 10px;
+}
+
+.card{
+    height:80%;
+    width:100%;
+    padding:20px;
+    color: white;
+    background-color: var(--Dark-blue);
+    border-radius: 10px;
+    
+}
+
+.options{
+    background-color: transparent;
+    border:none;
+    border-radius: 50%;
+    
+}
+.options:hover{
+    background-color: white;
+    
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    font-size: 14px;
+    padding: 10px;
+}
+.hours{
+    padding:10px;
+    font-weight: 300;
+    font-size: 32px;
+}
+.previous{
+    font-size: 12px;
+    color: var(--Pale-Blue);
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+}
+.previous:hover{
+    color: white;
+    
+}
+.previous:active,.options:active{
+    transform: scale(0.98rem);
+}
+
+.container{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    gap:20px;
+    padding:100px 0;
+}
+.prof-card{
+    grid-row-start: 1;
+    grid-row-end:3;
+}
+
+@media(max-width:375px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .card section{
+        display: flex;
+        flex-direction: row;
+    }
+    .previous{
+        margin-top: 20px;
+    }
+    .options{
+        background-color: transparent;
+        border:none;
+        border-radius: 50%;
+        
+    }
+    .options:hover{
+        background-color: white;
+        
+    }
+    .previous:hover{
+        color: white;
+        
+    }
+    .previous:active,.options:active{
+        transform: scale(0.98rem);
+    }
+    .card:hover{
+        background-color: var(--Desaturated-blue);
+    }
+}
