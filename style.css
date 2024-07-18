@@ -25,7 +25,9 @@ body{
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    display: flex;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
     justify-content: center;
     align-items: center;
     background-color: var(--Very-dark-blue);
